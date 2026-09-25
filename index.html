@@ -309,6 +309,35 @@
       }
     }
   </style>
+<!-- Bubbly Link Button Snippet -->
+<style>
+  .bubbly-btn {
+    display: inline-block;
+    padding: 8px 18px;
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(255, 117, 140, 0.4);
+    transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+  }
+
+  .bubbly-btn:hover {
+    transform: scale(1.08) translateY(-2px);
+    box-shadow: 0 6px 18px rgba(255, 117, 140, 0.6);
+  }
+
+  .bubbly-btn:active {
+    transform: scale(0.95) translateY(0);
+    box-shadow: 0 2px 8px rgba(255, 117, 140, 0.4);
+  }
+</style>
+
+
 </head>
 <body>
 
@@ -354,6 +383,7 @@ Blarney Books, 37 James St. Port Fairy
 Collins Booksellers, Liebig St. Warrnambool. RETAILERS PLEASE USE THE CONTACT FORM TO DISCUSS OPTIONS.
 
 Also available at booksellers online. In Australia - Amazon, Booktopia, Fishpond. Waterstones in the UK and several European sites. Now available as an ebook.</p>
+     <a href="read_page.html" class="bubbly-btn">Read More</a>
       </article>
 
       <!-- 3 Smaller Image Placeholders -->
