@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Set Times New Roman across the document */
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Prevent body scrollbar, scrollbar handled by container */
+        }
+
+        /* Container forcing explicit larger dimensions to trigger horizontal and vertical scrollbars */
+        .scroll-wrapper {
+            width: 100vw;
+            height: 100vh;
+            overflow-x: scroll;
+            overflow-y: scroll;
+        }
+
+        .content-area {
+            /* Forced width and height larger than viewport to enable both scrollbars */
+            min-width: 1400px;
+            min-height: 1200px;
+            padding: 2.5rem;
+        }
+
+        /* Custom scrollbar styling for enhanced aesthetics */
+        ::-webkit-scrollbar {
+            width: 12px;
+            height: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #e2e8f0;
+            border-radius: 6px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #94a3b8;
+            border-radius: 6px;
+            border: 2px solid #e2e8f0;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #64748b;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="scroll-wrapper" id="scrollContainer">
+        <div class="content-area flex flex-col items-start justify-start">
+            
+            <!-- Sticky / Top Navigation Bar -->
+            <div class="sticky top-0 left-0 right-0 w-full flex justify-between items-center bg-white/90 backdrop-blur-md p-4 mb-8 border-b border-slate-200 shadow-sm rounded-xl">
+                <div>
+                    <span class="text-xs font-sans uppercase tracking-widest text-slate-500 font-semibold">Reading View</span>
+                    <h2 class="text-xl font-bold text-slate-800">Document Reader</h2>
+                </div>
+                <button 
+                    id="closeBtn"
+                    onclick="handleCloseWindow()" 
+                    class="font-sans inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 active:bg-red-800 text-white font-medium text-sm px-5 py-2.5 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 cursor-pointer">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                    Close Window
+                </button>
+            </div>
+
+            <main class="max-w-4xl bg-white p-10 rounded-2xl shadow-sm border border-slate-200 mb-10">
+                <header class="border-b border-slate-200 pb-6 mb-8">
+                    <h1 class="text-4xl sm:text-5xl font-normal leading-tight text-slate-900 mb-4">
+                        The Art of Deliberate Reading
+                    </h1>
+                    <p class="text-lg text-slate-600 italic">
+                        An exploration of focused attention, comprehension, and the written word.
+                    </p>
+                </header>
+
+                <article class="space-y-6 text-lg sm:text-xl text-slate-800 leading-relaxed">
+                    <p>
+                        The thought that she was now a widow before her twenty-ninth birthday struck Celia as utterly absurd. Widow, the word sounded so archaic. It rattled in her head. It had to be true, she knew, but the word fell short of expressing the dislocation she felt. Living in limbo here in a dingy, upstairs bedsit in the house of her cousin, Charlie. She sat staring at the documents on her desk. A scrap of coffee-stained paper clung to the back of a gas bill. She prised it loose. As she deciphered the smudged, handwritten words she recalled the day she’d written them; on the day before she locked up her house and left.
+<p>
+</p>
+The yoke of loss grips firm around my shoulders
+<p>
+</p>
+In my imagining I watch you stepping from the sea
+<p>
+</p>
+Beneath the Weeping Cherry tree above the basalt boulders
+<p>
+</p>
+I remember tasting the salt on your lips that day
+<p>
+</p>
+You took my hand and we lay there lost in wonder
+<p>
+</p>
+As the cherry petals showered from the tree…
+<p>
+</p>
+More lines captured the memories of a holiday with Clive at a beach house, ending with the sadness of today. Wiping her tears Celia read the words over and over, as if to convince herself of the truth of them. Copying the poem into her notebook she placed it to one side and reached into a cardboard box by her feet. From the jumble of stationery she retrieved a roll of sticky tape and moved to fasten the most urgent bills to the windowsill.
+<p>
+</p>
+Standing there for a moment she gazed pensively through the fly specked panes, thinking of the difficult trip from Bannockburn. She had almost wiped out a small family of ducks crossing the road in front of her…thinking of Clive, feeling hurt and angry about the way he’d left her. How could he do such a dreadful thing.
+<p>
+</p>
+Hitting the brakes hard like that had sent her old Corolla slewing sideways, groaning with the weight of the load. It was a wake-up call and fortunate that the country road was deserted. She wanted no further heartache, not on these roads, not anywhere.
+<p>
+</p>
+Her anger still simmered as she threw the roll of tape back into the box where it promptly bounced out again. As she bent to retrieve it she exhaled the useless anger from her chest, remembering Clive’s warmth and compassion. Ambivalent feelings about Clive tormented her.
+<p>
+</p>
+In recent months, before tragedy struck, her mother had joined the household. Failing health prompted the move. Her life was now changed immeasurably. Celia thought about it every day. Ruth was living with advancing dementia at Summerleigh Community Care.
+<p>
+</p>
+Mortgage payments and memories deemed it impossible for Celia to keep her family home. Charlie’s mother, her Aunt Eula, had passed on his offer of the bedsit. Why he didn’t contact her directly was puzzling. Maybe, like a lot of others, he felt awkward, didn’t know what to say under the circumstances. Confirming her arrival date for early April Celia was mindful of his closing words.
+<p>
+</p>
+‘On a temporary basis of course…until you get back on your feet.’
+<p>
+</p>
+Accommodation in her cousin’s house would incur no rent. At least Charlie had been clear about that.
+                    </p>
+
+                    <h2 class="text-2xl font-bold text-slate-900 mt-8 mb-4 border-b border-slate-100 pb-2">
+                        Navigating Spatial Text Layouts
+                    </h2>
+
+                    <p>
+                        Document presentation often requires extended canvas space. By deliberately expanding the horizontal and vertical bounds of the page layout, both horizontal and vertical navigation paths are made available to the reader. This provides room for side-by-side annotations, widescreen table structures, and comfortable viewing across various viewports.
+                    </p>
+
+                    <p>
+                        Scrollbar interfaces serve as physical indicators of spatial depth. The vertical scrollbar measures modern progression down a linear narrative, while the horizontal scrollbar offers room for expanded wide-format content, wide diagrams, or multi-column comparative layouts.
+                    </p>
+
+                    <blockquote class="my-8 pl-6 border-l-4 border-slate-800 italic text-xl text-slate-700 bg-slate-50 py-3 pr-4 rounded-r-lg">
+                        "Reading is to the mind what exercise is to the body." — Joseph Addison
+                    </blockquote>
+
+                    <p>
+                        As you finish reviewing this document or working within this view, you can dismiss this tab using the standard window close control located at the top-right corner of the interface.
+                    </p>
+                </article>
+
+                <!-- Wide Content Sample to justify horizontal scrolling -->
+                <div class="mt-12 p-6 bg-slate-100 rounded-xl border border-slate-200">
+                    <h3 class="font-bold text-lg mb-3">Wide Format Visual Data Grid</h3>
+                    <div class="flex gap-6 text-sm text-slate-700">
+                        <div class="min-w-[300px] p-4 bg-white rounded-lg shadow-sm">
+                            <strong class="block text-slate-900 mb-1">Section Alpha</strong>
+                            Extended wide content column designed to demonstrate horizontal scrollbar activation across the viewport layout.
+                        </div>
+                        <div class="min-w-[300px] p-4 bg-white rounded-lg shadow-sm">
+                            <strong class="block text-slate-900 mb-1">Section Beta</strong>
+                            Additional data metrics rendered side-by-side ensuring layout width exceeds standard viewport bounds.
+                        </div>
+                        <div class="min-w-[300px] p-4 bg-white rounded-lg shadow-sm">
+                            <strong class="block text-slate-900 mb-1">Section Gamma</strong>
+                            Ensuring complete, seamless interactive scrolling both horizontally and vertically.
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Custom Modal Notification (Fall-back when window.close() is restricted by browser) -->
+            <div id="closeWarningModal" class="hidden fixed inset-0 bg-slate-900/50 backdrop-blur-sm flex items-center justify-center z-50 p-4">
+                <div class="bg-white rounded-xl max-w-md w-full p-6 shadow-2xl font-sans">
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Tab Close Restricted</h3>
+                    <p class="text-slate-600 text-sm mb-6">
+                        Browser security settings prevent scripts from closing tabs that were not opened directly by JavaScript. Please close this tab manually using your browser bar (`Ctrl+W` / `Cmd+W`).
+                    </p>
+                    <button 
+                        onclick="dismissModal()" 
+                        class="w-full bg-slate-800 hover:bg-slate-900 text-white font-medium py-2 px-4 rounded-lg transition-colors">
+                        Got it
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        /**
+         * Closes the current browser window/tab or provides a fallback alert
+         * if the browser blocks window.close().
+         */
+        function handleCloseWindow() {
+            try {
+                window.close();
+                
+                // If window.close() was blocked (common when not opened via window.open())
+                setTimeout(() => {
+                    if (!window.closed) {
+                        document.getElementById('closeWarningModal').classList.remove('hidden');
+                    }
+                }, 100);
+            } catch (err) {
+                console.error("Window close error:", err);
+                document.getElementById('closeWarningModal').classList.remove('hidden');
+            }
+        }
+
+        /**
+         * Dismisses the fallback modal dialog.
+         */
+        function dismissModal() {
+            document.getElementById('closeWarningModal').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
